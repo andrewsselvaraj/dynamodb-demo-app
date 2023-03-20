@@ -46,7 +46,7 @@ public class StudentService {
 
         StudentDTO response = new StudentDTO();
         BeanUtils.copyProperties(student,response);
-
+      
         return response;
     }
 }

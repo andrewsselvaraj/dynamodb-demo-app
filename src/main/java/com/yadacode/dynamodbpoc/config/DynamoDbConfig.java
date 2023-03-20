@@ -15,17 +15,17 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DynamoDbConfig {
 
-    @Value("${aws.access.key}")
-    private String awsAccessKey;
+   // @Value("${aws.access.key}")
+    private String awsAccessKey="j0k5b";
 
-    @Value("${aws.access.secret-key}")
-    private String awsSecretKey;
+   // @Value("${aws.access.secret-key}")
+    private String awsSecretKey="9bb1bk";
 
-    @Value("${aws.dynamodb.endpoint}")
-    private String awsDynamoDBEndPoint;
+   // @Value("${aws.dynamodb.endpoint}")
+    private String awsDynamoDBEndPoint="http://localhost:8000";
 
-    @Value("${aws.region:}")
-    private String awsRegion;
+  //  @Value("${aws.region:}")
+    private String awsRegion="local";
 
     @Bean
     public AWSCredentials amazonAWSCredentials(){
